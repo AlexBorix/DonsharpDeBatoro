@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", toggleHeaderBackground);
 });
 
+
 // script pour la playlist
 const videosList = [
   {

@@ -21,24 +21,6 @@ a {
     cursor: pointer;
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 110px 100px;
-}
-
-@media (max-width: 1000px) {
-    .box {
-        padding: 100px 50px;
-    }
-}
-
-@media (max-width: 600px) {
-    .box {
-        padding: 125px 30px;
-    }
-}
 
 header {
     position: fixed;
@@ -97,12 +79,6 @@ header .nav li:last-child {
     margin-right: 0;
 }
 
-/* Style du lien actif */
-/* .nav li.active a {
-    text-decoration: underline;
-    text-decoration-color: red;
-} */
-
 @media (max-width: 1000px) {
     header {
         padding: 20px 50px;
@@ -122,6 +98,27 @@ header .nav li:last-child {
         margin: 0 7px;
     }
 }
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+
+@media (max-width: 1000px) {
+    .box {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        padding: 125px 30px;
+    }
+}
+
 
 .box {
     position: relative;
@@ -245,12 +242,6 @@ header .nav li:last-child {
     align-items: center;
 }
 
-/* h1 {
-
-    color: #fff;
-    font-size: 3rem;
-    
-} */
 
 
 
@@ -523,6 +514,7 @@ header .nav li:last-child {
 	margin-bottom: 50px;
 }
 #projects .all-projects {
+    margin-top: 70px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -742,22 +734,26 @@ header .nav li:last-child {
 
 
 /* section slider */
-
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    /* margin: auto; */
     margin-top: 100px;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 50%;
+    height: 500px; /* Fix the height of the container */
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
+    height: 100%; /* Ensures that slides take up full height of the container */
 }
 
 /* Next & previous buttons */
@@ -833,14 +829,10 @@ header .nav li:last-child {
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
+    from {opacity: .4} 
+    to {opacity: 1}
 }
+
 
 /* footer section */
 /* Footer section */
