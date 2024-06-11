@@ -112,13 +112,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// script pour animation timeline
-
- // Initialise ScrollReveal
- ScrollReveal().reveal('.timeline-item', {
+// Initialise ScrollReveal
+ScrollReveal().reveal('.timeline-item', {
   delay: 100,      // Délai avant que l'élément ne soit révélé (en millisecondes)
   distance: '50px', // Distance de décalage de l'élément lors de son apparition
   origin: 'bottom', // Point d'origine de l'animation
   easing: 'ease-in-out', // Effet de transition de l'animation
   interval: 200 // Délai entre chaque élément de la timeline (en millisecondes)
+});
+
+// Ajoute l'événement 'click' pour les appareils mobiles
+document.querySelectorAll('.timeline-contenth .image-container').forEach(container => {
+  container.addEventListener('click', () => {
+      container.classList.toggle('active');
+  });
 });
