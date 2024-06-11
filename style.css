@@ -534,9 +534,10 @@ header .nav li:last-child {
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#projects .projects-header h1 {
+/* #projects .projects-header h1 {
 	margin-bottom: 50px;
-}
+    color: red;
+} */
 #projects .all-projects {
     margin-top: 70px;
 	display: flex;
@@ -568,14 +569,17 @@ header .nav li:last-child {
 #projects .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
+    font-family: sans-serif;
 }
 #projects .project-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
+    font-family: sans-serif;
 }
 #projects .project-info p {
 	color: white;
+    font-family: sans-serif;
 }
 #projects .project-img {
 	flex-basis: 50%;
